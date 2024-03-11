@@ -1,0 +1,1 @@
+web gunicorn TreasureBits.wsgi:application --log-file -

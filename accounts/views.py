@@ -10,7 +10,7 @@ from rest_framework.response import Response
 
 class AccountView(APIView):
     def get(self, request):
-        output = [{'id': output.id, 'username': output.username, 'email': output.email, 'password': output.password, 'created_at': output.created_at, 'updated_at': output.updated_at} for output in Account.objects.all()]
+        output = [{'username': output.username, 'email': output.email, 'password': output.password} for output in Account.objects.all()]
         return Response(output)
 
     def post(self, request):
