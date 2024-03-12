@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-y%h2f74x-u@kxch4gycyjv$4+54vj5azjmjbdv2x(w#1^k&2v('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'https://treasurebits-frontend.vercel.app/',
